@@ -11,7 +11,7 @@ function findUser(post) {
 
 function findComments(post) {
   return (
-    commentsFromServer.filter(comment => comment.postId === post.userId) || null
+    commentsFromServer.filter(comment => comment.postId === post.id) || null
   );
 }
 
